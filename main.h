@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef _main_h_
+#define _main_h_
 
 #include <stdarg.h>
 #include <unistd.h>
@@ -58,4 +58,4 @@ char *fill_long_oct_array(char *bnr, char *oct);
 char *fill_short_oct_array(char *bnr, char *oct);
 char *fill_hex_array(char *bnr, char *hex, int isupp, int limit);
 
-#endif
+#endif /* MAIN_H */
