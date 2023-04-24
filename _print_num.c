@@ -7,7 +7,8 @@
 */
 int _print_num(int n)
 {
-	int digit, sign, rcount = 0, temp[255];
+	int sign, rcount = 0, temp[255];
+	int i = 0, j = 0;
 
 	if (n < 0)
 	{
@@ -23,7 +24,7 @@ int _print_num(int n)
 	{
 		return (_putchar('0'));
 	}
-	int i = 0;
+
 
 	while (n > 0)
 	{
@@ -31,7 +32,7 @@ int _print_num(int n)
 		n /= 10;
 		i++;
 	}
-	for (int j = i - 1; j >= 0; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
 		rcount += _putchar(temp[j] + '0');
 	}
