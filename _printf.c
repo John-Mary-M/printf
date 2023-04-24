@@ -37,6 +37,10 @@ case '%':
 _putchar('%');
 rcount++;
 break;
+case 'd':
+case 'i':
+rcount += _print_num(va_arg(args, int));
+break;
 }
 }
 }
