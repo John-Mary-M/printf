@@ -1,5 +1,5 @@
-#ifndef _main_h_
-#define _main_h_
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 #include <stdarg.h>
 #include <unistd.h>
@@ -24,7 +24,7 @@ int print_prg(va_list __attribute__((unused)), char *, unsigned int);
 int print_chr(va_list prargs, char *c, unsigned int ibuf);
 int print_str(va_list prargs, char *buf, unsigned int ibuf);
 int print_int(va_list prargs, char *buf, unsigned int ibuf);
-int print_bnr(va_list arguments, char *buf, unsigned int ibuf);
+int print_bnr(va_list prargs, char *buf, unsigned int ibuf);
 int print_unt(va_list arguments, char *buf, unsigned int ibuf);
 int print_oct(va_list arguments, char *buf, unsigned int ibuf);
 int print_hex(va_list arguments, char *buf, unsigned int ibuf);
